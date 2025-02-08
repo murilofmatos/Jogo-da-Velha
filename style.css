@@ -12,8 +12,8 @@ body {
 }
 
 .wrapper {
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 420px;
 }
 
 #game-board {
@@ -22,8 +22,8 @@ body {
   top: 0;
   z-index: 2;
   display: grid;
-  column-gap: 20px;
-  row-gap: 20px;
+  column-gap: 30px;
+  row-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
@@ -31,25 +31,40 @@ body {
 #game-board::after {
   content: "";
   position: absolute;
-  width: 400px;
+  width: 420px;
   height: 30px;
   background: #202020;
-  top: 115px;
+  top: 120px;
   border-radius: 10px;
-  box-shadow: 0 140px #202020;
+  box-shadow: 0 150px #202020;
 }
 
 #game-board::before {
   content: "";
   position: absolute;
   width: 30px;
-  height: 400px;
+  height: 420px;
   background: #202020;
-  left: 115px;
+  left: 120px;
   border-radius: 10px;
-  box-shadow: 140px 0px #202020;
+  box-shadow: 150px 0px #202020;
 }
 
 .cell {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.Xmark {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 8rem;
+}
+
+.Omark {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 7rem;
 }
