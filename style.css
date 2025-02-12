@@ -59,12 +59,15 @@ body {
   max-height: 120px;
 }
 
-.Xmark {
+.mark {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  user-select: none;
+}
+
+.x {
   font-size: 8rem;
 }
 
-.Omark {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.o {
   font-size: 7rem;
 }
